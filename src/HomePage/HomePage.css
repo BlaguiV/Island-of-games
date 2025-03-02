@@ -1,0 +1,28 @@
+.gamesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.gameCard {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    max-width: 200px;
+    box-sizing: border-box;
+}
+
+.gameCard:hover {
+    transform: scale(1.05);
+}
+
+.gameImg {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}

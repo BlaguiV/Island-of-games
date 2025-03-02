@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.homeButton,
+.checkButton,
+.newGameButton {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.homeButton {
+    background-color: #007bff;
+    color: white;
+}
+
+.homeButton:hover {
+    background-color: #0056b3;
+}
+
+.checkButton {
+    background-color: #28a745;
+    color: white;
+}
+
+.checkButton:hover {
+    background-color: #1e7e34;
+}
+
+.newGameButton {
+    background-color: #dc3545;
+    color: white;
+}
+
+.newGameButton:hover {
+    background-color: #a71d2a;
+}
+
+.inputForNumber {
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+    margin: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.text {
+    font-size: 20px;
+    color: #333;
+    margin-top: 20px;
+}
+
+.attempts {
+    font-size: 18px;
+    color: #666;
+}
