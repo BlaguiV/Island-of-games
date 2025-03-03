@@ -9,7 +9,7 @@ function GuessTheNumber() {
     const [text, setText] = useState('')
 
     function generateRandomNumber() {
-        return Math.floor(Math.random() * 10) + 1
+        return Math.floor(Math.random() * 100) + 1
     }
 
     const checkNumber = () => {
