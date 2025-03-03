@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.homeButton {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    width: 200px;
+    height: 50px;
+    transition: background 0.3s;
+}
+
+.homeButton:hover {
+    background-color: #0056b3;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gameButton {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: #3f3f3f;
+    color: white;
+    width: 200px;
+    height: 50px;
+    transition: background 0.3s;
+}
+
+.gameButton:hover {
+    background-color: #1f1f1f;
+}
+
+.choices,
+.gameScore {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.gameText {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+h3 {
+    margin: 10px;
+}
+
+.gameScore {
+    font-size: 20px;
+    color: #000000;
+}
+
+.gameScore span {
+    font-weight: bold;
+}

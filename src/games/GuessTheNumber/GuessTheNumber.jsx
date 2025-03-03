@@ -7,9 +7,10 @@ function GuessTheNumber() {
     const [attempts, setAttempts] = useState(0)
     const [userNumber, setUserNumber] = useState("")
     const [text, setText] = useState('')
+    const [endGame, setEndGame] = useState(false)
 
     function generateRandomNumber() {
-        return Math.floor(Math.random() * 10) + 1
+        return Math.floor(Math.random() * 100) + 1
     }
 
     const checkNumber = () => {
@@ -23,9 +24,17 @@ function GuessTheNumber() {
             return
         }
 
+        if (randomNumber < userNumber) {
+            setText("Too high")
+        }
+
+        if (randomNumber > userNumber) {
+            setText("Too low")
+        }
 
         if (Number(userNumber) == randomNumber) {
-            setText("You guess the number")
+            setText(`You guessed the number in ${attempts} attempts `)
+            setEndGame(true)
         } else {
             setAttempts(attempts + 1)
         }
@@ -36,6 +45,7 @@ function GuessTheNumber() {
         setUserNumber("")
         setAttempts(0)
         setText('')
+        setEndGame(false)
     }
 
     return (
@@ -50,7 +60,7 @@ function GuessTheNumber() {
                     value={userNumber}
                     onChange={(e) => setUserNumber(e.target.value)}
                 />
-                <button className="checkButton" onClick={checkNumber}>Check</button>
+                <button className="checkButton" onClick={checkNumber} disabled={endGame}>Check</button>
                 <h3 className="text">{text}</h3>
                 <p className="attempts">Attempts: {attempts}</p>
                 <button className="newGameButton" onClick={restartGame}>New game</button>
