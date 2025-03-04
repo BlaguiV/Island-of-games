@@ -2,6 +2,7 @@ import "./HomePage.css";
 import { Link } from "react-router-dom";
 import GameGuessNumber from "../assets/guessTheNumber.jpg";
 import RPS from '../assets/RPS.jpg'
+import tictactoe from "../assets/tictactoe.jpg"
 function HomePage() {
     return (
         <div className="container">
@@ -11,6 +12,9 @@ function HomePage() {
                 </Link>
                 <Link to="/rockPaperScissors" className="gameCard">
                     <img src={RPS} alt="" className="gameImg" />
+                </Link>
+                <Link to="/ticTacToe" className="gameCard">
+                    <img src={tictactoe} alt="" className="gameImg" />
                 </Link>
             </div>
         </div>
